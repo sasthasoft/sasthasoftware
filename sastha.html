@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="ta">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0">
+	<script src=
+"https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js">
+	</script>
+</head>
+<body background = "peakpx (1).jpg">
+<body>
+	<div class="GFG">
+		<h1 style="color: white;">
+			Sastha Software 
+		</h1>
+		<h2 style="color: white;"> Founded by  Mr.Vignesh.V </h2>
+		<p style="color: white;">On Year Of 2023 </p>
+		<p style="color: white;">
+		"Jewellery Billing Software </p>
+<p style="color: white;">
+Textiles Billing Software </p>
+<p style="color: white;"> 
+ Garments Billing Software </p>
+<p style="color: white;">
+ Super Market Billing Software </p>
+<p style="color: white;"> 
+|Auditor Management Software </p>
+<p style="color: white;"> 
+School's Billing Software </p>
+<p style="color: white;"> 
+| College Billing Software </p>
+<p style="color: white;"> 
+Electrical Shop Billing Software </p> 
+<p style="color: white;"> 
+|Agency Billing Software </p>
+<p style="color: white;">
+ Industry's Billing Software </p>
+<p style="color: white;"> 
+|Billing & ERP Software </p>
+
+
+<p style="color: white;">| Hospital Billing Software</p>
+<p style="color: white;"> 
+| Medical Billing Software </p>
+<p style="color: white;"> 
+| Company Billing Software </p>
+<p style="color: white;"> 
+Chit's & Finance Account's & Billing Software | </p>
+<p style="color: white;">
+ Development Will Be Customer Choose...! </p>
+<p style="color: white;"> 
+| Other Business Also Billing Software Available...!"
+		</p>
+	</div>
+
+	<button id="btn"> PDF MAKER </button>
+
+	<script>
+		let button = document.getElementById("btn");
+		button.addEventListener("click", function () {
+			let doc = new jsPDF();
+			let pdf = document.querySelector(".GFG");
+			doc.fromHTML(pdf);
+			doc.save("GFG.pdf");
+		});
+	</script>
+</body>
+
+</html>
